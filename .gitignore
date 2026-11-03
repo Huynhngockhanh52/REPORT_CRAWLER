@@ -1,0 +1,45 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+
+# --- Môi trường ảo của uv ---
+.venv/
+
+# --- Build / đóng gói ---
+dist/
+build/
+*.egg-info/
+
+# --- Test ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Bí mật: chỉ commit file mẫu ---
+.env
+.env.*
+!.env.example
+
+# --- Dữ liệu sinh ra khi chạy: giữ thư mục, bỏ nội dung ---
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# --- Claude Code: cấu hình cá nhân ---
+.claude/settings.local.json
+CLAUDE.local.md
+
+# --- Thư mục nháp ---
+ztrash/
+
+# --- IDE / hệ điều hành ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Tùy chọn: bỏ dấu # nếu cần ---
+# src/report_crawler/agent/memory/   # nếu memory được agent ghi ra khi chạy
+# xmpl/                              # nếu repo để public (chứa nội dung trang của người khác)
